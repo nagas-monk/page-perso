@@ -15,10 +15,10 @@
    --form-title-color:rgb(254, 254, 254);
 
    /*typo size*/
-   --title-size:2rem;
-   --text-big:1.25rem;
-   --text-normal:1rem;
-   --text-small:0.875rem;
+   --title-size:2.5rem;
+   --text-big:1.5rem;
+   --text-normal:1.2rem;
+   --text-small:1rem;
 
    /*espacement*/
    --section-space:2.5rem;
@@ -59,6 +59,9 @@ body{
 }
 #img-larry {
   height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 h1,
 #img-larry {
@@ -70,6 +73,7 @@ section{
 
 h1{
    font-size: var(--title-size);
+   font-weight: bold;
 }
 h2,h3{
    background-color: var(--text-outline);
@@ -99,5 +103,16 @@ p{
 .button{
    color: var(--button-color);
    text-decoration: none;
+   font-weight: bold;
+}
+
+@media(min-width:700px){
+   header{
+      padding: 25px 40px;
+   }
+   body{max-width: 900px;
+   margin: auto;
+   padding: 25px;
+   }
    
 }
