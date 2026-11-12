@@ -1,0 +1,103 @@
+/* Page personnelle — styles.
+   Mardi : typographie, couleurs, espacements (« CSS from scratch »).
+   Jeudi : mise en page mobile first avec Flexbox ou Grid (« Layout Lab »). */
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+:root{ 
+   /*colors*/
+   --text-color:rgb(16, 0, 43);
+   --background-color: rgb(224, 170, 255);
+   --text-outline:rgb(157, 78, 221);
+   --button-color:rgb(90, 24, 154);
+   --menu-color:rgb(199, 125, 255);
+   --form-title-color:rgb(254, 254, 254);
+
+   /*typo size*/
+   --title-size:2rem;
+   --text-big:1.25rem;
+   --text-normal:1rem;
+   --text-small:0.875rem;
+
+   /*espacement*/
+   --section-space:2.5rem;
+   --li--space:0.875rem;
+   --form-space:1.5rem;
+   --paragraph-space:1rem;
+
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+}
+header{
+   background-color: var(--menu-color);
+   max-width: fit-content;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   width: 100%;
+   border-radius: 50px;
+   padding: 10px;
+}
+
+body{
+
+   font-size: var(--text-normal);
+   line-height: 1.6;
+   color: var(--text-color);
+   background: var(--background-color);
+   text-align: left;
+   text-size-adjust: 1;
+   margin-left: auto;
+   margin-right: auto;
+   width: 75%;
+   
+}
+#img-larry {
+  height: auto;
+}
+h1,
+#img-larry {
+  width: 100%;
+}
+section{
+   margin: var(--section-space) auto;
+}
+
+h1{
+   font-size: var(--title-size);
+}
+h2,h3{
+   background-color: var(--text-outline);
+   border-radius: 50px;
+   font-size: var(--text-big);
+   padding:5px;
+
+}
+legend{
+   background-color: var(--form-title-color);
+   border-radius: 50px;
+}
+fieldset{
+   background-color: var(--menu-color);
+   margin: var(--form-space);
+   width: fit-content;
+   max-width: 100%;
+   box-sizing: border-box;
+}
+li{
+   margin: var(--li--space);
+}
+p{
+   margin: var(--paragraph-space);
+   text-decoration: none;
+}
+.button{
+   color: var(--button-color);
+   text-decoration: none;
+   
+}
