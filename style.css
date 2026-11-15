@@ -133,9 +133,4 @@ footer {
   nav {
     justify-content: space-between;
   }
-
-  #img-larry {
-    max-height: 28rem;
-    object-fit: cover;
-  }
 }
