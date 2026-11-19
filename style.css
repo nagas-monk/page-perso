@@ -120,15 +120,15 @@ ul {
 }
 p {
   margin: var(--paragraph-space) 0;
-}
-
-input,
-button {
-  max-width: 100%;
   margin: 0.25rem 0;
   padding: 0.5rem;
   font: inherit;
 }
+
+input{
+  width: 100%;
+}
+
 
 footer {
   overflow-wrap: anywhere;
