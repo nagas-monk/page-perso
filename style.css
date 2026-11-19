@@ -15,6 +15,8 @@
   --button-color: rgb(90, 24, 154);
   --menu-color: rgb(199, 125, 255);
   --form-title-color: rgb(254, 254, 254);
+  --hover-color: rgb(16,0,43);
+  --white-color:white;
   --title-size: 2rem;
   --text-big: 1.5rem;
   --text-normal: 1rem;
@@ -53,6 +55,10 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.5rem;
+}
+a:hover{
+  background-color: var(--background-color);
+  color: var(--hover-color);
 }
 
 .button {
@@ -94,12 +100,24 @@ fieldset {
   border: 0;
   border-radius: 1rem;
   background-color: var(--menu-color);
+  
 }
 
 li {
   margin: var(--li-space);
 }
-
+ul {
+  display: grid;
+  
+}
+.competences-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-weight: bold;
+}
+.projets-list {
+  font-weight: bold;
+}
 p {
   margin: var(--paragraph-space) 0;
 }
